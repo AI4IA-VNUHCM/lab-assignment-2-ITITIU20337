@@ -13,9 +13,23 @@ ______________________________________
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
 	int testcase = atoi(argv[1]);
-	
+	int result=1;
 	//Your codes here
-	
-	
+    
+	while (testcase % 2 == 0) {
+	 printf(" %d ",2);
+	 printf("*");
+	 testcase = testcase / 2;}
+     
+	for(int i=3;i<= sqrt(testcase); i= i + 2)
+	{
+	 while (testcase % i == 0 ){
+	 printf("%d ", i) ;
+	 printf("*");
+	 testcase= testcase /i ; }
+	 
+	}
+	if (testcase > 2 )
+	 printf (" %d  ", testcase);
 	return 0;
 }
