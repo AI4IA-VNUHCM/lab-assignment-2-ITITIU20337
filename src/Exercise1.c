@@ -23,12 +23,12 @@ int main(int argc, char *argv[]) {
 
      if (distance <= 2){
       result= 15000;
-	  printf("%f\n",result);}
+	  printf("%0.f\n",result);}
      else if ((distance>=2)&&(distance<=30)){
       result= 15000 + ((distance-2)/0.25)*2000;
-	  printf("%f\n",result);}
+	  printf("%0.f\n",result);}
      if (distance > 30){
       result= 15000 + ((28/0.25)*2000) + (distance-30)*5000;
-	  printf("%f\n",result);}
+	  printf("%0.f\n",result);}
 	return 0;
 }
